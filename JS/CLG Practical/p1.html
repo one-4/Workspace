@@ -4,13 +4,13 @@
     <script>
       function convert() {
         var temp = parseFloat(document.getElementById("temp").value);
-        var mode = document.getElementsByName("mode");
-        if(mode[0].checked) {
+        var mode = document.querySelector('input[name="mode"]:checked').value;
+        if(mode==="celcius") {
           var celcius = 5.0 * (temp - 32.0) / 9.0;
-          document.write("temperature in celcius is " + celcius + "&#176;C");
-        } else {
+          document.getElementById("result").innerHTML = "Celcius:"+ celcius;
+        } else if (mode==="fahrenheit") {
           var fahrenheit = (temp / 5.0) * 9.0 + 32.0;
-          document.write("temperature in fahrenheit is " + fahrenheit + "&#176;F");
+          document.getElementById("result").innerHTML = "Fahrenheit: " + fahrenheit;
         }
       }
     </script>
@@ -21,5 +21,6 @@
     <input type="radio" name="mode" value="celcius">convert to celcius<br>
     <input type="radio" name="mode" value="fahrenheit">convert to fahrenheit<br>
     <input type="button" value="convert" onclick="convert()">
+    <p id="result"></p>
   </body>
 </html>
