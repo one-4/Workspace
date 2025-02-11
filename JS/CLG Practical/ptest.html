@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Print squares and cubes using alert</title>
+  </head>
+  <body>
+    <script>
+    //   var table = "Number | Square   | Cube\n";
+    //   for (let i = 5; i <= 15; i++) {
+    //     const number = i.toString().padStart(2, '0'); // Format with leading zero
+    //     const square = (i * i).toString().padStart(6, ' '); // Pad for alignment
+    //     const cube = (i * i * i).toString().padStart(6, ' '); // Pad for alignment
+    //     table += `${number}     | ${square} | ${cube}\n`;
+    //   }
+        let table ="Number | Square | Cube \n";
+        for(let i = 5; i<=15; i++){
+            const number=i;
+            const square = i*i;
+            const cube = i*i*i;
+            table= table + `${number} | ${square} | ${cube}\n`;
+        }
+      alert(table);
+    </script>
+  </body>
+</html>

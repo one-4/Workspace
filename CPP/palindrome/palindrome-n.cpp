@@ -1,3 +1,5 @@
+//Time complexity: O(n)
+
 #include<iostream>
 #include<string.h>
 
