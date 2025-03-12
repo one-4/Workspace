@@ -1,0 +1,36 @@
+Sync in JS:
+SYnchronous means the code runs in a particular sequence of instructions given in the program.
+i.e. Line by Line 
+Each instructions waits for the previous instruction to complete its execution. 
+
+
+Asynchronous in JS:
+Due to Asynchronous programming, sometimes important instructions get blocked due to some previous instructions, which causes a delay in the UI.
+Asynchronous code execution allows to execute the next instruction code immediately and doesn't block the code.
+
+
+Callbacks:
+A callback is a function passed as an argument to another function.
+
+Callback Hell
+
+
+
+To Avoid Callback HEll... We use Promise 
+
+let promise=new Promise((resolve,reject)=> {...})
+                        function with 2 handlers
+
+        *resolve and reject are callbacks provided by JS
+
+    In Js, Promise is a class.
+
+3 states of promise:-
+    >pending state
+    >fulfilled state {resolved}
+    >rejected state
+
+Suppose an order placed on amazon:
+    >pending state (order placed; waiting to recieve the product; online paid; etc)
+    >fulfilled state (Order recieved; No problem faced!)
+    >rejected state (Order cancelled; Other disputes which not wanted!)

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let promise=new Promise((resolve, reject) => {
+        //     console.log("HEllo, I am a Promise!!");
+        // })
+
+
+        //  The above code is an example of promise(). This code is in >pending state
+        // To change the state from pending to fulfilled.... follow the code 
+        //FULFILLED STATE
+        // let promise=new Promise((resolve, reject) => {
+        //     console.log("HEllo, I am a Promise!!");
+        //     //resolve();
+        //     resolve(123);
+        // })
+        // Output:
+        //Promise {<fulfilled>: undefined}          Promise {<fulfilled>: 123}
+        // [[Prototype]]: Promise                   [[Prototype]]: Promise
+        // [[PromiseState]]: "fulfilled"            [[PromiseState]]: "fulfilled"
+        // [[PromiseResult]]: undefined             [[PromiseResult]]: 123
+
+        //  The above code is an example of promise(). This code is in >fulfilled state
+        // To change the state from fulfilled to reject.... follow the code 
+        //REJECT STATE
+        let promise=new Promise((resolve, reject) => {
+            console.log("HEllo, I am a Promise!!");
+            reject("some error message!!");
+        })
+        //OUTPUT
+        //Uncaught (in promise) some error message!!
+    </script>
+</body>
+</html>

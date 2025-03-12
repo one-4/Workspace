@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sum(a, b) {console.log(a+b)};
+
+      function calculator(a,b,sumCallback){  //sumCallback calling the above function.
+        sumCallback(a,b);
+      }
+      calculator(2,3,sum);
+      
+      //Now if we want to pass an arrow function in place of Above Line:
+      calculator(1,2, (a,b)=> {
+        console.log(a+b);
+      })
+    </script>
+  </body>
+</html>
