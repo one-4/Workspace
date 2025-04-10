@@ -1,4 +1,4 @@
-#Why MongoDB??
+# Why MongoDB??
 We use SQL primarily. It is a stcructured type Database {in the form of tables}.
 
 we create a db.
@@ -32,7 +32,8 @@ Every entry stored in document(JSON) format.
 Different entries of same collection can have different number of fields.  
 suppose:
 >>ENTRY 1          //These are Written in JSON format.
-```{
+```
+{
     "name": "Papai",
     "age": 34,
     "address": {
