@@ -12,7 +12,7 @@
       function calculator(a,b,sumCallback){  //sumCallback calling the above 'sum' function.
         sumCallback(a,b);
       }
-      calculator(2,3,sum);
+      calculator(2,3,sum);  //calling the function 
       
       //Now if we want to pass an arrow function in place of Above Line {Instead of calling the function}:
       calculator(1,2, (a,b)=> {

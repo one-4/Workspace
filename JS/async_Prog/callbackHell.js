@@ -1,11 +1,11 @@
 function getData(dataID, getNextData){
-    //2s delay
     setTimeout(() => {
         console.log(dataID," data");
         if (getNextData){
+            console.log("fetching next data...")
             getNextData();
         }
-    },2000);
+    },2000);  //2s delay
 }
 
 // CALLBACK HELL

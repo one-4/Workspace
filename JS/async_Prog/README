@@ -34,3 +34,12 @@ Suppose an order placed on amazon:
     >pending state (order placed; waiting to recieve the product; online paid; etc)
     >fulfilled state (Order recieved; No problem faced!)
     >rejected state (Order cancelled; Other disputes which not wanted!)
+
+
+There are two functions to use Promise:
+1> promise.then((resolve) => {...})
+2> promise.catch((error) => {...})
+
+CHAINING CONDITION:-  CREATE A FUNCTION SO LIKE WHEN A CONDITION VALID THEN ONLY OHTER CONDITION IS CHECK OTHERWISE NOT!
+
+
